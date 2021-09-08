@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import * as Styled from "./styles"
 
 const FrontPage: React.FC = ()=>{
@@ -7,6 +8,11 @@ const FrontPage: React.FC = ()=>{
             <h1>
                 Bem vindo
             </h1>
+            
+            <Link to="/caio">
+            <Styled.Button >PÁGINA DO CAIO</Styled.Button>
+            </Link>
+
         </Styled.Main>
     )
 }
