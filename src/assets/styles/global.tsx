@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
 :root {
-    --color-background: #F0F0F7;
+    --color-background: purple;
     --color-primary-lighter: #9871F5;
     --color-primary-light: #916BEA;
     --color-primary: #6842C2;
@@ -14,7 +14,7 @@ export default createGlobalStyle`
     --color-text-in-primary: #262626;
     --color-text-title: #32264D;
     --color-text-complement: #000000;
-    --color-text-base: #6A6180;
+    --color-text-base: #32264d;
     --color-line-in-white: #E6E6F0;
     --color-input-background: #F8F8FC;
     --color-button-text: #FFFFFF;

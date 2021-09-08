@@ -1,13 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
 import { ToastContainer } from 'react-toastify';
-import './assets/styles/App.css';
+import GlobalStyles from './assets/styles/global'
 import Routes from './routes';
 
 function App() {
   return (
     <>
     <Routes/>
+    <GlobalStyles/>
     <ToastContainer autoClose={3000}/> 
     </>
   );

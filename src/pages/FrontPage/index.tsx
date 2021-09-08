@@ -8,7 +8,7 @@ const FrontPage: React.FC = ()=>{
             <h1>
                 Bem vindo
             </h1>
-            
+            <br/>
             <Link to="/caio">
             <Styled.Button >PÁGINA DO CAIO</Styled.Button>
             </Link>
