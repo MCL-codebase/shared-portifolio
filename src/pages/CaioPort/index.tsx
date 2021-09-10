@@ -1,15 +1,15 @@
 import React from "react";
 import * as Styled from "./styles"
 
-const CaioPorti: React.FC = ()=>{
+const CaioPort: React.FC = ()=>{
     return(
         <Styled.Main>
             <h1>
-                Bem vindo!!
+            Página do Caio
             </h1>
             
         </Styled.Main>
     )
 }
 
-export default CaioPorti;
+export default CaioPort;
