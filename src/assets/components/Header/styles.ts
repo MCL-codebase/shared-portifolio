@@ -1,16 +1,15 @@
 import styled from "styled-components";
 
 export const Header = styled.header`
-  display: flex;
+  display:flex;
+  position:sticky;
+  top:2rem;
   margin:0 auto;
+  padding:0rem 5rem 0rem 5rem;
+  align-items:center;
   width:90%;
-  flex-direction: column;
-  border-radius:50px;
-  background: linear-gradient(
-    -45deg,
-    var(--color-primary-darker),
-    var(--color-secundary)
-  );
+  border-radius:10px;
+  background:#000;
   @media (min-width: 700px) {
     height: 12rem;
   }
@@ -27,50 +26,32 @@ export const TopBarContainer = styled.div`
   @media (min-width: 700px) {
     max-width: 1100px;
   }
-  a {
-    height: 3.2rem;
-    transition: opacity 0.2s;
-  }
-  a:hover {
-    opacity: 0.6;
-  }
-  > img {
-    height: 1.6rem;
-  }
 `;
 
 export const HeaderContent = styled.div`
   width: 90%;
+  display:flex;
   margin: 0 auto;
-  position: relative;
   margin: 3.2rem auto;
-  @media (min-width: 700px) {
-    flex: 1;
-    max-width: 90%;
-    margin: 0 auto;
-    padding-bottom: 48px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    strong {
-      max-width: 350px;
-    }
-  }
-  strong {
-    font: 700 3.6rem Archivo;
-    line-height: 4.2rem;
-    color: var(--color-title-in-primary);
-  }
-  p {
-    max-width: 30rem;
-    font-size: 1.6rem;
-    line-height: 2.6rem;
-    color: var(--color-text-in-primary);
-    margin-top: 2.4rem;
-    margin-bottom: 2.4rem;
-    @media (min-width: 700px) {
-      margin-bottom: 0;
-    }
-  }
 `;
+export const TitleContainer = styled.div`
+float:left;
+color:var(--color-line-in-white);
+font-size:2rem;
+font:
+`
+export const NavContainer = styled.nav`
+background:var(--color-secundary-lighter);
+float:right;
+justify-self:flex-end;
+border-radius:2px;
+a{
+  text-decoration: none;
+  color: #fff;
+  padding: 0 15px 0 15px;
+  transition: background 0.5s, color 0.25s;
+}
+`
+export const Title = styled.h1`
+
+`

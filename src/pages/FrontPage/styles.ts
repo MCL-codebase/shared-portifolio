@@ -19,6 +19,7 @@ grif-template-columns:2fr 2fr 2fr 2fr;
 grid-gap:20px;
 justify-content:center;
 `;
+
 export const Main = styled.div`
 background: #BABCBBe3;
   width: 100%;

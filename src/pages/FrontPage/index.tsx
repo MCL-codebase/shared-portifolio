@@ -29,6 +29,7 @@ const FrontPage: React.FC = ()=>{
             <Link to="/felipe">
             <Styled.Button >PÁGINA DO FELIPE</Styled.Button>
             </Link>
+            
             </Styled.ButtonsContainer>
 
         </Styled.Main>
