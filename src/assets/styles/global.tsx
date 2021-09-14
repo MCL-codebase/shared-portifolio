@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
 :root {
-    --color-background: #000;
+    --color-background: #272727;
     --color-primary-lighter: ##FAC000;
     --color-primary-light: ##ffc913;
     --color-primary: #f8c000;
@@ -38,6 +38,7 @@ export default createGlobalStyle`
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height:100vh;
   }
   body,
   input,

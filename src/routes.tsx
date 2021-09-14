@@ -5,6 +5,7 @@ import CaioPort from "./pages/CaioPort";
 import MagnoPort from "./pages/MagnoPort";
 import MiguelPort from "./pages/MiguelPort";
 import FelipePort from "./pages/FelipePort";
+import JohurPort from "./pages/JohurPort";
 
 import FrontPage from "./pages/FrontPage";
 
@@ -16,6 +17,7 @@ function Routes() {
     <Route path="/Magno"exact component={MagnoPort}/>
     <Route path="/Miguel" exact component={MiguelPort}/>
     <Route path="/Felipe" exact component={FelipePort}/>
+    <Route path="/Johur" exact component={JohurPort}/>
     </BrowserRouter>
     );
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import * as Styled from "./styles";
 
@@ -9,14 +8,43 @@ interface PageHeaderProps {
 }
 
 const PageHeader: React.FC<PageHeaderProps> = (props) => {
+  const menuBtn = document.querySelector('.menu-btn');
+  let menuOpen = false;
+  menuBtn?.addEventListener('click',() =>{
+    if(!menuOpen){
+      menuBtn.classList.add('open');
+      menuOpen = true;
+    } else {
+      menuBtn.classList.remove('open');
+      menuOpen = false;
+    }
+  })
+
   return (
     <Styled.Header>
       <Styled.TitleContainer>
         {props.title}
       </Styled.TitleContainer>
-      <Styled.NavContainer>
-       <a> <Link to="/Caio"> Caio</Link> </a>
-      </Styled.NavContainer>
+      <div className="menu-btn">
+        <div className="menu-btn_brg"></div>
+      </div>
+{/* 
+      <Styled.Slink to="/Caio">
+       Caio
+      </Styled.Slink>
+      
+      <Styled.Slink to="/Magno">
+       Magno
+      </Styled.Slink>
+
+      <Styled.Slink to="/Miguel">
+       Miguel
+      </Styled.Slink>
+
+      <Styled.Slink to="/Felipe">
+       Felipe
+      </Styled.Slink>
+       */}
     </Styled.Header>
   );
 }
