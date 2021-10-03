@@ -13,7 +13,6 @@ const FrontPage: React.FC = ()=>{
             <h1>
                 Bem vindo
             </h1>
-            <br/>
             <Styled.ButtonsContainer>
 
             <Link to="/caio">

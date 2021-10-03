@@ -20,17 +20,7 @@ grid-gap:20px;
 justify-content:center;
 `;
 
-export const Main = styled.div`
-background: #BABCBBe3;
-  width: 100%;
-  max-width: 100rem;
-  border-radius: 0.8rem;
-  margin: -3.2rem auto 3.2rem;
-  padding-top: 6.4rem !important;
-  padding: 1rem;
-  color:var(--color-title-in-primary);
-  overflow: hidden;
-`
+
 export const Button = styled.button`
 align-self:center;
 width:30rem;
@@ -44,4 +34,5 @@ background:linear-gradient(
   );
 color:#fefefe;
 border-radius:50px;
+box-shadow10px 2px 5px rgba(75,11,105,1);
 `

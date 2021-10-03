@@ -9,7 +9,9 @@ export const Header = styled.header`
   align-items:center;
   width:90%;
   .menu-btn{
-    position:relative;
+    position:absolute;
+    right:1rem;
+    top:3rem;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -45,7 +47,7 @@ export const Header = styled.header`
   }
   // animation
   .menu-btn.open .menu-btn_brg{
-    transform:translate(-50px);
+    transform:translate(0);
     background:transparent;
     box-shadow:none;
   }
@@ -54,24 +56,11 @@ export const Header = styled.header`
   }
   
   .menu-btn.open .menu-btn_brg::after{
-    transform:rotate(-45deg) translate(-1px,1px);
+    transform:rotate(-45deg) translate(1px,1px);
   }
   border-radius:10px;
   background:#000;
   height:12rem;
-`;
-
-export const TopBarContainer = styled.div`
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: var(--color-text-in-primary);
-  padding: 0.5rem 0;
-  @media (min-width: 700px) {
-    max-width: 1100px;
-  }
 `;
 
 export const HeaderContent = styled.div`
@@ -80,6 +69,7 @@ export const HeaderContent = styled.div`
   margin: 3.2rem auto;
 
 `;
+
 export const TitleContainer = styled.div`
 color:var(--color-line-in-white);
 font-size:2rem;
@@ -114,6 +104,5 @@ margin: 0 2rem 0 2rem;
 padding: 5px 15px 5px 15px;
 `
 
-export const Title = styled.h1`
-
-`
+export const Menu = styled.div`
+`;

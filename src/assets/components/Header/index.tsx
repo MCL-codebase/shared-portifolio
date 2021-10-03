@@ -9,7 +9,7 @@ interface PageHeaderProps {
 
 const PageHeader: React.FC<PageHeaderProps> = (props) => {
   const menuBtn = document.querySelector('.menu-btn');
-  let menuOpen = false;
+  let menuOpen = true;
   menuBtn?.addEventListener('click',() =>{
     if(!menuOpen){
       menuBtn.classList.add('open');
@@ -28,23 +28,6 @@ const PageHeader: React.FC<PageHeaderProps> = (props) => {
       <div className="menu-btn">
         <div className="menu-btn_brg"></div>
       </div>
-{/* 
-      <Styled.Slink to="/Caio">
-       Caio
-      </Styled.Slink>
-      
-      <Styled.Slink to="/Magno">
-       Magno
-      </Styled.Slink>
-
-      <Styled.Slink to="/Miguel">
-       Miguel
-      </Styled.Slink>
-
-      <Styled.Slink to="/Felipe">
-       Felipe
-      </Styled.Slink>
-       */}
     </Styled.Header>
   );
 }
